@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express'
+/* import { Request, Response, NextFunction } from 'express'
 
 export const auth = () => {
   return (req: Request, res: Response, next: NextFunction) => {
@@ -13,3 +13,4 @@ export const role = (role: String) => {
     else res.render('auth/login', { title: 'Login' })
   }
 }
+ */
