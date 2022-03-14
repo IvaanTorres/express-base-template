@@ -1,11 +1,12 @@
 import { Router } from 'express'
-const router = Router()
 
 //! MIDDLEWARES
 /* import { auth } from '../middlewares/auth' */
 
 //! CONTROLLERS
 import authController from '../controllers/authController'
+
+const router = Router()
 
 router.get('/register', authController.showRegister)
 router.post('/register', authController.register)

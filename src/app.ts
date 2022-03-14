@@ -1,5 +1,6 @@
 import express from 'express'
 import morgan from 'morgan'
+// eslint-disable-next-line no-unused-vars
 import path from 'path'
 
 //! ROUTES
@@ -14,8 +15,8 @@ app.set('port', process.env.PORT || 3000)
 
 //! MIDDLEWARES
 app.use(morgan('dev'))
-app.use(express.urlencoded({ extended: false })) //Makes readable form data sent from client
-app.use(express.json()) //Transform data to JSON before dealing with it
+app.use(express.urlencoded({ extended: false })) // Makes readable form data sent from client
+app.use(express.json()) // Transform data to JSON before dealing with it
 
 //! ROUTER
 app.use('/', indexRoutes)
